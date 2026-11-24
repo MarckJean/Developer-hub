@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Stack &amp; HTML Notes | Marck Jean Henrismon</title>
+</head>
+<body id="top">
+  <header>
+    <h1>Marck Jean Henrismon</h1>
+    <p>Technical Stack, HTML Reference &amp; Study Log</p>
+    <nav aria-label="Primary Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="stack.html" aria-current="page">Tech Stack &amp; Notes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section aria-labelledby="tabel-heading">
+      <h2 id="table-heading">HTML5 Semantic Elements Reference</h2>
+      <p>
+        Core HTML5 elements I use to structure documents without relying on generic<code>&lt;div&gt;</code>wrappers:
+      </p>
+      
+      <table>
+        <caption>Semantic Landmarks &amp; Content Elements</caption>
+        <thead>
+          <tr>
+            <th scope="col">Element</th>
+            <th scope="col">Category</th>
+            <th scope="col">Primary Purpose</th>
+            <th scope="col">Best Practice / Accessibility Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><code>&lt;header&gt;</code></th>
+            <td>Landmark</td>
+            <td>Introductory content or site-wide branding and navigation</td>
+            <td>Keep primary site navigation inside a top-level header</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>&lt;nav&gt;</code></th>
+            <td>Landmark</td>
+            <td>Major blocks of internal or external navigation links</td>
+            <td>Add <code>aria-label</code> when using multiple nav bars on one page</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>&lt;main&gt;</code></th>
+            <td>Landmark</td>
+            <td>Dominant, unique content of the document body</td>
+            <td>Use only one visible <code>&lt;main&gt;</code> element per page</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>&lt;article&gt;</code></th>
+            <td>Sectioning</td>
+            <td>Self-contained composition that could stand alone (e.g., project card, post)</td>
+            <td>Always include a heading (<code>&lt;h2&gt;</code>–<code>&lt;h6&gt;</code>) inside</td>
+          </tr>
+          <tr>
+            <th scope="row"<code>&lt;table&gt;</code></th>
+            <td>Tabular Data</td>
+            <td>Organizing multi-variable data across rows and columns</td>
+            <td>Never use tables for page layout; pair with <code>&lt;thead&gt;</code> and <code>scope</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="concepts-heading">
+      <h2 id="concepts-heading">Core Web Concepts (In My Own Words)</h2>
+      <dl>
+        <dt><strong>Semantic HTML</strong></dt>
+        <dd>
+          Writing markup where the tag describes the meaning and role of the content—not how it looks visually. This improves screen-reader navigation, SEO, and code maintainability.
+        </dd>
+
+        <dt><strong>Relative vs. Absolute File Paths</strong></dt>
+        <dd>
+          A relative path (like <code>href="stack.html"</code>) points to a file based on the current page's location in the project folder, making the entire site portable. An absolute path points to a full external URL.
+        </dd>
+
+        <dt><strong>Separation of Concerns</strong></dt>
+        <dd>
+          Keeping structure (HTML), presentation (CSS), and behavior (JavaScript) isolated in their own layers so bugs are easier to isolate and stylesheets can be swapped cleanly.
+        </dd>
+      </dl>
+    </section>
+
+    <section aria-labelledby="resources-heading">
+      <h2 id="resources-heading">Daily Reference &amp; Documentation</h2>
+      <ul>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="no opener no referrer">
+            MDN Web Docs:HTML Reference
+          </a>
+        </li>
+        <li>
+          <a href="https://validator.w3.org/" target="_blank" rel=noopener no referrer">
+            W3C Markup Validation Service
+          </a>
+        </li>
+        <li>
+          <a href="https://www.freecodecamp.org/" target="_blank" rel=noopener no referrer">
+            freeCodeCamp Curriculum
+          </a>
+        </li>
+      </ul>
+    </section>
+  <main>
+
+  <footer>
+    <p>&copy; 2026 Marck Jean Henrismon. Built with semantic HTML. </p>
+    <p><a href="#top">Back to top</a></p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
